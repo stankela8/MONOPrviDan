@@ -50,5 +50,18 @@ namespace PraksaPrviDan
         {
             Console.WriteLine($"{Name} trenira na poziciji {Position}.");
         }
+        public void UpdateMarketValue(double newValue)
+        {
+            if (newValue < 0)
+            {
+                Console.WriteLine("Tržišna vrijednost ne može biti negativna.");
+                return;
+            }
+
+            double oldValue = MarketValue;
+            MarketValue = newValue;
+
+            Console.WriteLine($"{Name}: tržišna vrijednost promijenjena s {oldValue} na {MarketValue} mil. eur.");
+        }
     }
 }

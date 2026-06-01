@@ -28,6 +28,7 @@ namespace PraksaPrviDan
                 Console.WriteLine("6 - Promijeni broj dresa");
                 Console.WriteLine("7 - Dodaj novog člana");
                 Console.WriteLine("8 - Prikaži igrače sortirane po tržišnoj vrijednosti");
+                Console.WriteLine("9 - Ažuriraj tržišnu vrijednost igrača");
                 Console.WriteLine("0 - Izlaz");
                 Console.Write("Odabir: ");
 
@@ -58,6 +59,9 @@ namespace PraksaPrviDan
                         break;
                     case "8":
                         ShowPlayersSortedByMarketValue(members);
+                        break;
+                    case "9":
+                        UpdatePlayerMarketValue(members);
                         break;
                     case "0":
                         run = false;
@@ -265,6 +269,51 @@ namespace PraksaPrviDan
             {
                 Console.WriteLine($"{player.Name} - {player.MarketValue} mil. € - {player.Position}");
             }
+        }
+        static void UpdatePlayerMarketValue(List<ClubMember> members)
+        {
+            Console.WriteLine("\n--- AŽURIRANJE TRŽIŠNE VRIJEDNOSTI IGRAČA ---");
+
+            List<Player> players = new List<Player>();
+
+            foreach (ClubMember member in members)
+            {
+                if (member is Player player)
+                {
+                    players.Add(player);
+                }
+            }
+
+            if (players.Count == 0)
+            {
+                Console.WriteLine("Nema igrača u klubu.");
+                return;
+            }
+
+            for (int i = 0; i < players.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {players[i].Name} - trenutna vrijednost: {players[i].MarketValue} mil. eur.");
+            }
+
+            Console.Write("Odaberi igrača: ");
+            bool validChoice = int.TryParse(Console.ReadLine(), out int playerChoice);
+
+            if (!validChoice || playerChoice < 1 || playerChoice > players.Count)
+            {
+                Console.WriteLine("Neispravan odabir igrača.");
+                return;
+            }
+
+            Console.Write("Unesi novu tržišnu vrijednost: ");
+            bool validValue = double.TryParse(Console.ReadLine(), out double newValue);
+
+            if (!validValue)
+            {
+                Console.WriteLine("Neispravan unos vrijednosti.");
+                return;
+            }
+
+            players[playerChoice - 1].UpdateMarketValue(newValue);
         }
     }
 }

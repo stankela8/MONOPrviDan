@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonoPrviDan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f20c3a289a008f4c126a6637ad8e51ee674ffed2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3ba5858578b78be133b216066b86717f26bdd06")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonoPrviDan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonoPrviDan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
