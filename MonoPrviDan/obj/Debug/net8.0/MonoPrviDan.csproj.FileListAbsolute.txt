@@ -12,3 +12,4 @@ C:\Users\Luka\source\repos\MonoPrviDan\MonoPrviDan\obj\Debug\net8.0\refint\MonoP
 C:\Users\Luka\source\repos\MonoPrviDan\MonoPrviDan\obj\Debug\net8.0\MonoPrviDan.pdb
 C:\Users\Luka\source\repos\MonoPrviDan\MonoPrviDan\obj\Debug\net8.0\MonoPrviDan.genruntimeconfig.cache
 C:\Users\Luka\source\repos\MonoPrviDan\MonoPrviDan\obj\Debug\net8.0\ref\MonoPrviDan.dll
+C:\Users\Luka\source\repos\MonoPrviDan\MonoPrviDan\obj\Debug\net8.0\MonoPrviDan.sourcelink.json

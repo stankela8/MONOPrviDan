@@ -27,6 +27,7 @@ namespace PraksaPrviDan
                 Console.WriteLine("5 - Pokreni trening");
                 Console.WriteLine("6 - Promijeni broj dresa");
                 Console.WriteLine("7 - Dodaj novog člana");
+                Console.WriteLine("8 - Prikaži igrače sortirane po tržišnoj vrijednosti");
                 Console.WriteLine("0 - Izlaz");
                 Console.Write("Odabir: ");
 
@@ -54,6 +55,9 @@ namespace PraksaPrviDan
                         break;
                     case "7":
                         AddMember(members);
+                        break;
+                    case "8":
+                        ShowPlayersSortedByMarketValue(members);
                         break;
                     case "0":
                         run = false;
@@ -233,6 +237,33 @@ namespace PraksaPrviDan
             else
             {
                 Console.WriteLine("Neispravan odabir.");
+            }
+        }
+        static void ShowPlayersSortedByMarketValue(List<ClubMember> members)
+        {
+            List<Player> players = new List<Player>();
+
+            foreach (ClubMember member in members)
+            {
+                if (member is Player player)
+                {
+                    players.Add(player);
+                }
+            }
+
+            if (players.Count == 0)
+            {
+                Console.WriteLine("Nema igrača u klubu.");
+                return;
+            }
+
+            var sortedPlayers = players.OrderByDescending(p => p.MarketValue);
+
+            Console.WriteLine("\n--- IGRAČI SORTIRANI PO TRŽIŠNOJ VRIJEDNOSTI ---");
+
+            foreach (Player player in sortedPlayers)
+            {
+                Console.WriteLine($"{player.Name} - {player.MarketValue} mil. € - {player.Position}");
             }
         }
     }

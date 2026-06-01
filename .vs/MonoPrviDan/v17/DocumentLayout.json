@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Luka\\source\\repos\\MonoPrviDan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CCD6E13A-34DC-4939-BFF7-CD06296C4412}|MonoPrviDan\\MonoPrviDan.csproj|c:\\users\\luka\\source\\repos\\monoprvidan\\monoprvidan\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCD6E13A-34DC-4939-BFF7-CD06296C4412}|MonoPrviDan\\MonoPrviDan.csproj|solutionrelative:monoprvidan\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCD6E13A-34DC-4939-BFF7-CD06296C4412}|MonoPrviDan\\MonoPrviDan.csproj|c:\\users\\luka\\source\\repos\\monoprvidan\\monoprvidan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCD6E13A-34DC-4939-BFF7-CD06296C4412}|MonoPrviDan\\MonoPrviDan.csproj|solutionrelative:monoprvidan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Luka\\source\\repos\\MonoPrviDan\\MonoPrviDan\\Player.cs",
+              "RelativeDocumentMoniker": "MonoPrviDan\\Player.cs",
+              "ToolTip": "C:\\Users\\Luka\\source\\repos\\MonoPrviDan\\MonoPrviDan\\Player.cs",
+              "RelativeToolTip": "MonoPrviDan\\Player.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wC0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T11:24:23.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Luka\\source\\repos\\MonoPrviDan\\MonoPrviDan\\Program.cs",
               "RelativeDocumentMoniker": "MonoPrviDan\\Program.cs",
               "ToolTip": "C:\\Users\\Luka\\source\\repos\\MonoPrviDan\\MonoPrviDan\\Program.cs",
               "RelativeToolTip": "MonoPrviDan\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswGUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T11:02:22.881Z",
               "EditorCaption": ""

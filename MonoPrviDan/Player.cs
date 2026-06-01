@@ -43,7 +43,7 @@ namespace PraksaPrviDan
             ShowBasicInfo();
             Console.WriteLine($"Broj dresa: {JerseyNumber}");
             Console.WriteLine($"Pozicija: {Position}");
-            Console.WriteLine($"Tržišna vrijednost: {MarketValue} mil. €");
+            Console.WriteLine($"Tržišna vrijednost: {MarketValue} mil. eur");
         }
 
         public void Train()
